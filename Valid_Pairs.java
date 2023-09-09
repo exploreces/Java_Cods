@@ -3,7 +3,7 @@ public class Valid_Pairs {
     public static boolean isValidPair(int[] arr, int n, int k, int m) {
         if (n % 2 != 0) {
 		return false;
-}
+}                                               // m = remainder ;  k = by which we divide.
 
         Map<Integer, Integer> map = new HashMap<>();
 
@@ -13,7 +13,7 @@ public class Valid_Pairs {
 
     }
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {                   // (remainder - arr[i]%k +k)%k --> we get the number by which it should be divided to get desirable.
                 int value = (m - arr[i] % k + k) % k;
                 if (map.containsKey(value)) {
                     int frequency = map.get(value);
@@ -52,6 +52,9 @@ public class Valid_Pairs {
 
         boolean result = isValidPair(arr, n, k, m);
         System.out.println(result);
+       // int calc = (3-2%9+9)%9;
+       // System.out.println(calc);
+
 
 }
 
