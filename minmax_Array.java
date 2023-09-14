@@ -18,7 +18,7 @@ public class minmax_Array {
 
 
     public static void main(String[]args){
-        int arr[]= {1,2,4,3,78,65,7,-1};
+        int arr[]= {1,2,4,3,78,65,7,-5};
         System.out.println(min(arr));
         System.out.println(max(arr));
 

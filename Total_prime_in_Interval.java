@@ -1,6 +1,5 @@
 
 
-    import java.util.* ;
 import java.io.*; 
 import java.util.Scanner;
 public class Total_prime_in_Interval {
@@ -25,9 +24,9 @@ public class Total_prime_in_Interval {
         }
 		 return count;
     }
-}
 
-class Solution {
+
+
 	public static void main(String args[]) {
 		
 		Total_prime_in_Interval obj = new Total_prime_in_Interval();
